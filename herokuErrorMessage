@@ -1,0 +1,77 @@
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33163] [INFO] Starting gunicorn 19.7.1
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33163] [INFO] Listening at: http://0.0.0.0:5000 (33163)
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33163] [INFO] Using worker: sync
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33166] [INFO] Booting worker with pid: 33166
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33166] [ERROR] unexpected indent (settings.py, line 134)
+22:07:49 web.1   |  Traceback (most recent call last):
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+22:07:49 web.1   |      self.wsgi = self.app.wsgi()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+22:07:49 web.1   |      self.callable = self.load()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+22:07:49 web.1   |      return self.load_wsgiapp()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+22:07:49 web.1   |      return util.import_app(self.app_uri)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+22:07:49 web.1   |      __import__(module)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/DEPLOY/djangoFutureFleet/mysite/mysite/wsgi.py", line 17, in <module>
+22:07:49 web.1   |      application = Cling(get_wsgi_application())
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+22:07:49 web.1   |      django.setup(set_prefix=False)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/__init__.py", line 19, in setup
+22:07:49 web.1   |      configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 56, in __getattr__
+22:07:49 web.1   |      self._setup(name)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 43, in _setup
+22:07:49 web.1   |      self._wrapped = Settings(settings_module)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 106, in __init__
+22:07:49 web.1   |      mod = importlib.import_module(self.SETTINGS_MODULE)
+22:07:49 web.1   |    File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+22:07:49 web.1   |      return _bootstrap._gcd_import(name[level:], package, level)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/DEPLOY/djangoFutureFleet/mysite/mysite/settings.py", line 134
+22:07:49 web.1   |      if os.getcwd() == '/app':
+22:07:49 web.1   |      ^
+22:07:49 web.1   |  IndentationError: unexpected indent
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33166] [ERROR] Exception in worker process
+22:07:49 web.1   |  Traceback (most recent call last):
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+22:07:49 web.1   |      self.wsgi = self.app.wsgi()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/base.py", line 67, in wsgi
+22:07:49 web.1   |      self.callable = self.load()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+22:07:49 web.1   |      return self.load_wsgiapp()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+22:07:49 web.1   |      return util.import_app(self.app_uri)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/util.py", line 352, in import_app
+22:07:49 web.1   |      __import__(module)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/DEPLOY/djangoFutureFleet/mysite/mysite/wsgi.py", line 17, in <module>
+22:07:49 web.1   |      application = Cling(get_wsgi_application())
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+22:07:49 web.1   |      django.setup(set_prefix=False)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/__init__.py", line 19, in setup
+22:07:49 web.1   |      configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 56, in __getattr__
+22:07:49 web.1   |      self._setup(name)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 43, in _setup
+22:07:49 web.1   |      self._wrapped = Settings(settings_module)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/django/conf/__init__.py", line 106, in __init__
+22:07:49 web.1   |      mod = importlib.import_module(self.SETTINGS_MODULE)
+22:07:49 web.1   |    File "/usr/lib/python3.5/importlib/__init__.py", line 126, in import_module
+22:07:49 web.1   |      return _bootstrap._gcd_import(name[level:], package, level)
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/DEPLOY/djangoFutureFleet/mysite/mysite/settings.py", line 134
+22:07:49 web.1   |      if os.getcwd() == '/app':
+22:07:49 web.1   |      ^
+22:07:49 web.1   |  IndentationError: unexpected indent
+22:07:49 web.1   |  During handling of the above exception, another exception occurred:
+22:07:49 web.1   |  Traceback (most recent call last):
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+22:07:49 web.1   |      worker.init_process()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 126, in init_process
+22:07:49 web.1   |      self.load_wsgi()
+22:07:49 web.1   |    File "/home/tapplebaum/Desktop/django/djangoFutureFleet/ff_env/lib/python3.5/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+22:07:49 web.1   |      self.reloader.add_extra_file(exc_val.filename)
+22:07:49 web.1   |  AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33166] [INFO] Worker exiting (pid: 33166)
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33163] [INFO] Shutting down: Master
+22:07:49 web.1   |  [2018-01-22 22:07:49 -0700] [33163] [INFO] Reason: Worker failed to boot.
+22:07:50 web.1   Exited with exit code 3
